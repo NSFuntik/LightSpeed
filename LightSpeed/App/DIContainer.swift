@@ -12,7 +12,6 @@ import Foundation
 extension DI {
   static let networkService = Key<any NetworkServiceProtocol>()
   static let imageService = Key<any ImageServiceProtocol>()
-//  static let productService = Key<any ProductServiceProtocol>()
 }
 
 // MARK: - DI Container Setup
@@ -21,6 +20,5 @@ extension DI.Container {
   static func setup() {
     register(DI.networkService, NetworkClient())
     register(DI.imageService, ImageService())
-//    register(DI.productService, ProductService())
   }
 }
