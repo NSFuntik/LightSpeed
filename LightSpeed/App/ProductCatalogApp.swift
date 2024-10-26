@@ -8,7 +8,7 @@ struct ProductCatalogApp: App {
 
   var body: some Scene {
     WindowGroup {
-      ProductCatalogCoordinator().view(for: .productList)
+      AppCoordinator().view(for: .productList)
     }
   }
 }

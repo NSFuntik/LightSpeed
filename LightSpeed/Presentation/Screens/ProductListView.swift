@@ -13,7 +13,7 @@ struct ProductListView: View {
   @Environment(\.colorScheme) private var colorScheme
   @Environment(\.dynamicTypeSize) private var dynamicTypeSize
   @StateObject private var state = State()
-  @EnvironmentObject private var navigation: Navigation<ProductCatalogCoordinator>
+  @EnvironmentObject private var navigation: Navigation<AppCoordinator>
 
   private var themeColors: ThemeConfiguration.Colors {
     colorScheme == .dark ? ThemeConfiguration.dark : ThemeConfiguration.light
@@ -152,5 +152,5 @@ extension Product {
 }
 
 #Preview {
-  ProductCatalogCoordinator().view(for: .productList)
+  AppCoordinator().view(for: .productList)
 }

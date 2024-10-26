@@ -9,7 +9,7 @@ import SwiftUI
 
 // MARK: - Coordinator
 
-final class ProductCatalogCoordinator: NavigationModalCoordinator {
+final class AppCoordinator: NavigationModalCoordinator {
   enum Screen: ScreenProtocol {
     case productList
     case productDetails(Product)
